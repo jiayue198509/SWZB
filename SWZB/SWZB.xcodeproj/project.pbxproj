@@ -54,7 +54,6 @@
 			children = (
 				F0A0609B1E306BEA00A2BAD6 /* classes */,
 				F0A060891E30624000A2BAD6 /* AppDelegate.swift */,
-				F0A0608D1E30624000A2BAD6 /* Main.storyboard */,
 				F0A060901E30624000A2BAD6 /* Assets.xcassets */,
 				F0A060921E30624000A2BAD6 /* LaunchScreen.storyboard */,
 				F0A060951E30624000A2BAD6 /* Info.plist */,
@@ -99,6 +98,7 @@
 		F0A0609F1E306BEA00A2BAD6 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				F0A0608D1E30624000A2BAD6 /* Main.storyboard */,
 				F0A0609D1E306BEA00A2BAD6 /* home */,
 			);
 			path = main;
@@ -202,6 +202,7 @@
 				F0A0608E1E30624000A2BAD6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F0A060921E30624000A2BAD6 /* LaunchScreen.storyboard */ = {
