@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F029448D1E3095E600BD919D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029448C1E3095E600BD919D /* HomeViewController.swift */; };
+		F02944901E30B9A400BD919D /* UITabBar-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029448F1E30B9A400BD919D /* UITabBar-Extention.swift */; };
 		F0A0608A1E30624000A2BAD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A060891E30624000A2BAD6 /* AppDelegate.swift */; };
 		F0A0608F1E30624000A2BAD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A0608D1E30624000A2BAD6 /* Main.storyboard */; };
 		F0A060911E30624000A2BAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A060901E30624000A2BAD6 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F029448C1E3095E600BD919D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F029448F1E30B9A400BD919D /* UITabBar-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar-Extention.swift"; sourceTree = "<group>"; };
 		F0A060861E30624000A2BAD6 /* SWZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A060891E30624000A2BAD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0A0608E1E30624000A2BAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +35,7 @@
 		F0A060A81E308BD100A2BAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SWZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		F0A060AA1E308BE600A2BAD6 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Discovery.storyboard; path = ../main/Discovery.storyboard; sourceTree = "<group>"; };
 		F0A060AD1E308BF700A2BAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = SWZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
-		F0A060B01E308EFF00A2BAD6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F0A060B01E308EFF00A2BAD6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F02944861E30956C00BD919D /* Conroller */ = {
+			isa = PBXGroup;
+			children = (
+				F0A060A21E308B3F00A2BAD6 /* Home.storyboard */,
+				F029448C1E3095E600BD919D /* HomeViewController.swift */,
+			);
+			path = Conroller;
+			sourceTree = "<group>";
+		};
+		F02944871E30956C00BD919D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F02944881E30956C00BD919D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F02944891E30959700BD919D /* Conroller */ = {
+			isa = PBXGroup;
+			children = (
+				F0A060B01E308EFF00A2BAD6 /* MainViewController.swift */,
+				F0A0608D1E30624000A2BAD6 /* Main.storyboard */,
+			);
+			path = Conroller;
+			sourceTree = "<group>";
+		};
+		F029448A1E30959700BD919D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F029448B1E30959700BD919D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F029448E1E30B98100BD919D /* extention */ = {
+			isa = PBXGroup;
+			children = (
+				F029448F1E30B9A400BD919D /* UITabBar-Extention.swift */,
+			);
+			path = extention;
+			sourceTree = "<group>";
+		};
 		F0A0607D1E30624000A2BAD6 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +156,9 @@
 		F0A0609D1E306BEA00A2BAD6 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				F0A060A21E308B3F00A2BAD6 /* Home.storyboard */,
+				F02944861E30956C00BD919D /* Conroller */,
+				F02944871E30956C00BD919D /* Model */,
+				F02944881E30956C00BD919D /* View */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -114,8 +174,9 @@
 		F0A0609F1E306BEA00A2BAD6 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				F0A0608D1E30624000A2BAD6 /* Main.storyboard */,
-				F0A060B01E308EFF00A2BAD6 /* MainViewController.swift */,
+				F029448A1E30959700BD919D /* Model */,
+				F029448B1E30959700BD919D /* View */,
+				F02944891E30959700BD919D /* Conroller */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -131,6 +192,7 @@
 		F0A060A11E306BEA00A2BAD6 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				F029448E1E30B98100BD919D /* extention */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -219,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02944901E30B9A400BD919D /* UITabBar-Extention.swift in Sources */,
 				F0A0608A1E30624000A2BAD6 /* AppDelegate.swift in Sources */,
 				F0A060B11E308EFF00A2BAD6 /* MainViewController.swift in Sources */,
+				F029448D1E3095E600BD919D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +297,7 @@
 				F0A0608E1E30624000A2BAD6 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		F0A060921E30624000A2BAD6 /* LaunchScreen.storyboard */ = {
@@ -250,7 +314,7 @@
 				F0A060A31E308B3F00A2BAD6 /* Base */,
 			);
 			name = Home.storyboard;
-			path = ../main;
+			path = ../../main;
 			sourceTree = "<group>";
 		};
 		F0A060A71E308BD100A2BAD6 /* Follow.storyboard */ = {
