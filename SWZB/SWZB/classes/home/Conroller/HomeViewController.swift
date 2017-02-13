@@ -8,8 +8,40 @@
 
 import UIKit
 
+private let kTitleViewH: CGFloat = 40
+
 class HomeViewController: UIViewController {
     
+    private lazy var pageTitleView: PageTitleView = { [weak self] in
+        let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavgrationBarH, width: kScreenW, height: kTitleViewH)
+        let titles = ["推荐", "手游", "娱乐", "游戏", "趣玩"]
+        let titleView = PageTitleView(frame: titleFrame, titles: titles)
+        titleView.deglate = self
+        return titleView
+    
+    }()
+    
+    
+    
+    private lazy var pageContentView: PageContentView = { [weak self] in
+        
+        //确定内容frame
+        let frame = CGRect(x: 0, y: kStatusBarH + kNavgrationBarH + kTitleViewH, width: kScreenW, height: kScreenH - kStatusBarH - kNavgrationBarH - kTitleViewH)
+        
+        var childVcs:[UIViewController] = [UIViewController]()
+        //确定所有子控制器
+        for _ in 0 ..< 5 {
+            let viewController = UIViewController()
+            viewController.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+            childVcs.append(viewController)
+        }
+        
+        let pageContentView = PageContentView(frame: frame, childVcs: childVcs, parentViewController: self)
+        pageContentView.delegate = self
+        return pageContentView
+    }()
+    
+    //系统会掉函数
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,9 +56,28 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     
     private func setupUI(){
+        //不调整scrollowview 那边距
+        automaticallyAdjustsScrollViewInsets = false
         setupNavgrationBar()
         
+        //设置titleview
+        setupPageTitleView()
+        
+        setupPageContentView()
+        
+
+        
     }
+    
+    //设置pagecontentview
+    private func setupPageContentView() {
+        self.view.addSubview(pageContentView)
+    }
+    
+    private func setupPageTitleView(){
+        self.view.addSubview(pageTitleView)
+    }
+    
 //    设置导航栏
     private func setupNavgrationBar() {
         
@@ -65,5 +116,17 @@ extension HomeViewController {
         self.navigationItem.rightBarButtonItems = [searchBtn, scanBtn, historyBtn]
         
         
+    }
+}
+
+extension HomeViewController: PageTitleViewDegelate {
+    func pageTitleView(pageTitleView: PageTitleView, selectIndex index: Int) {
+        pageContentView.setCurrentIndex(index)
+    }
+}
+
+extension HomeViewController: PageContentViewDelegate {
+    func pageContentView(pageContentView: PageContentView, progreess: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleViewWithProgress(progreess, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }

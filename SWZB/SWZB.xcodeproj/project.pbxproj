@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F029448D1E3095E600BD919D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029448C1E3095E600BD919D /* HomeViewController.swift */; };
 		F02944901E30B9A400BD919D /* UITabBar-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029448F1E30B9A400BD919D /* UITabBar-Extention.swift */; };
+		F077A9A91E31AF4600DEFD4C /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A9A81E31AF4600DEFD4C /* PageTitleView.swift */; };
+		F077A9AB1E31B12700DEFD4C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A9AA1E31B12700DEFD4C /* Common.swift */; };
+		F077A9AD1E31D8CD00DEFD4C /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A9AC1E31D8CD00DEFD4C /* PageContentView.swift */; };
+		F077A9AF1E31E78900DEFD4C /* UIColor-Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077A9AE1E31E78900DEFD4C /* UIColor-Extentions.swift */; };
 		F0A0608A1E30624000A2BAD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A060891E30624000A2BAD6 /* AppDelegate.swift */; };
 		F0A0608F1E30624000A2BAD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A0608D1E30624000A2BAD6 /* Main.storyboard */; };
 		F0A060911E30624000A2BAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A060901E30624000A2BAD6 /* Assets.xcassets */; };
@@ -24,6 +28,10 @@
 /* Begin PBXFileReference section */
 		F029448C1E3095E600BD919D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F029448F1E30B9A400BD919D /* UITabBar-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar-Extention.swift"; sourceTree = "<group>"; };
+		F077A9A81E31AF4600DEFD4C /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		F077A9AA1E31B12700DEFD4C /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		F077A9AC1E31D8CD00DEFD4C /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		F077A9AE1E31E78900DEFD4C /* UIColor-Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extentions.swift"; sourceTree = "<group>"; };
 		F0A060861E30624000A2BAD6 /* SWZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0A060891E30624000A2BAD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0A0608E1E30624000A2BAD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +99,8 @@
 		F029448B1E30959700BD919D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F077A9A81E31AF4600DEFD4C /* PageTitleView.swift */,
+				F077A9AC1E31D8CD00DEFD4C /* PageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F029448F1E30B9A400BD919D /* UITabBar-Extention.swift */,
+				F077A9AE1E31E78900DEFD4C /* UIColor-Extentions.swift */,
 			);
 			path = extention;
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				F029448E1E30B98100BD919D /* extention */,
+				F077A9AA1E31B12700DEFD4C /* Common.swift */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -283,7 +295,11 @@
 			files = (
 				F02944901E30B9A400BD919D /* UITabBar-Extention.swift in Sources */,
 				F0A0608A1E30624000A2BAD6 /* AppDelegate.swift in Sources */,
+				F077A9A91E31AF4600DEFD4C /* PageTitleView.swift in Sources */,
+				F077A9AD1E31D8CD00DEFD4C /* PageContentView.swift in Sources */,
 				F0A060B11E308EFF00A2BAD6 /* MainViewController.swift in Sources */,
+				F077A9AB1E31B12700DEFD4C /* Common.swift in Sources */,
+				F077A9AF1E31E78900DEFD4C /* UIColor-Extentions.swift in Sources */,
 				F029448D1E3095E600BD919D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
